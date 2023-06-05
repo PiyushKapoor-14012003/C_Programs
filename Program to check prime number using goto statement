@@ -1,0 +1,22 @@
+//Program to check prime number using goto
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,count=0,i=2;
+	printf("Enter any number to check prime ");
+	scanf("%d ",&n);
+	check:
+		if(i<=(int)sqrt(n))
+		if(n%i==0)
+		count=1;
+		i++;
+	if(count==1)
+	printf("Not Prime");
+	else
+	{
+		if(i<=(int)sqrt(n))
+		goto check;
+		printf("Prime ");
+	}
+}
