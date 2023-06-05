@@ -1,0 +1,26 @@
+//Program to check whether number is armstrong or not
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int num,temp1,temp2,count=0,sum=0;
+	printf("Enter number to be checked ");
+	scanf("%d",&num);
+	temp1=num;
+	temp2=num;
+	while(temp1>0)   //to count digits
+	{
+		count++;
+		temp1/=10;
+	}
+	while(temp2>0)     //extract digits and adding their count -th power
+	{
+		int rem=temp2%10;
+		sum=sum+(int)pow(rem,count);
+		temp2/=10;
+	}
+	if(sum==num)
+	printf("%d is Armstrong Number",num);
+	else
+	printf("%d is not armstrong number",num);
+}
