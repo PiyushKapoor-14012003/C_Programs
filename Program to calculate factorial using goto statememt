@@ -1,0 +1,14 @@
+//Program to calculate factorial using goto
+#include<stdio.h>
+int main()
+{
+	int num,f=1,i=2;
+	printf("Enter any number ");
+	scanf("%d ",&num);
+	fact:
+		f=f*i;
+		i++;
+	if(i<=num)
+	goto fact;
+	printf("%d ",f);
+}
