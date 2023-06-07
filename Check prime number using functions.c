@@ -1,3 +1,4 @@
+// Program to check prime number using function
 #include <stdio.h>
 #include<math.h>
 int check_prime(int num)
