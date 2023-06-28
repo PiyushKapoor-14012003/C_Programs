@@ -112,5 +112,5 @@ int main()
 	}
 	if(pu!=po&&i==strlen(str))
 	printf("Unbalanced");
-		free(st);
+    free(st);
 }
